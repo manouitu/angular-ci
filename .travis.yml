@@ -21,9 +21,8 @@ jobs:
         - yarn
         - echo 'Testing!'
         - yarn test
-    - stage: deploy
-      skip_cleanup: true
-      provider: heroku
-      api_key:  5484e01a-d4fd-4dde-a4d5-cb725148f7c6
-      app:
-        master: angular-ci
+deploy:
+  provider: heroku
+  api_key:  5484e01a-d4fd-4dde-a4d5-cb725148f7c6
+  app:
+    master: angular-ci
