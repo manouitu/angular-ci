@@ -12,10 +12,12 @@ before_install: # if "install" is overridden
   - sudo apt-get install -y -qq yarn
 cache:
   yarn: true
+dist: xenial
+services:
+  - xvfb
 script:
-  - yarn install
   - yarn build
-  - yarn test --watch=false
+  - yarn test
 jobs:
   include:
     - stage: test
@@ -24,6 +26,7 @@ jobs:
         - echo 'Installing Deps!'
         - yarn
         - echo 'Testing!'
+        - xvfb-run make test
         - yarn test
     - stage: deploy
       script:
