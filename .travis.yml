@@ -14,7 +14,7 @@ before_install: # if "install" is overridden
   - sudo apt-get update -qq
   - sudo apt-get install -y -qq yarn
   - # start your web application and listen on `localhost`
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9876 http://localhost
 cache:
   yarn: true
 script:
