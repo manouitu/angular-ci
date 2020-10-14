@@ -20,4 +20,4 @@ deploy:
   skip_cleanup: true
   provider: heroku
   token:
-    secure: ""
+    secure: "19f73f12-338e-411b-81e6-485553b2cf02"
