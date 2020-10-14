@@ -24,6 +24,6 @@ jobs:
     - stage: deploy
       skip_cleanup: true
       provider: heroku
-      api_key: 19f73f12-338e-411b-81e6-485553b2cf02
+      api_key:  80963907-dca4-4086-9c9a-9b95f529fe4d
       app:
         master: angular-ci
