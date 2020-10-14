@@ -28,7 +28,6 @@ jobs:
     - stage: deploy
       script:
         - npm install -g firebase-tools
-        - firebase deploy --token "$FIREBASE_TOKEN"
       skip_cleanup: true
       provider: heroku
       api_key: 19f73f12-338e-411b-81e6-485553b2cf02
