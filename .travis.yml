@@ -19,7 +19,7 @@ jobs:
     - stage: test
       script:
         - echo 'Testing!'
-        - yarn test
+        - yarn run test
 deploy:
   script:
     - echo 'Deploy!!'
